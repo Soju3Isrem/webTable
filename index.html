@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    #sectionHead{
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      align-items: center;
+      height: 5vh;
+      /* margin: 2vh; */
+      margin-left: 20PX;
+    }
+
+
+    section{
+      background-attachment: fixed; 
+      height: 100vh; 
+    }
+    section:nth-child(6) {
+      background-image: url('ARM.jpg');
+    }
+    section:nth-child(7) {
+      background-image: url('sdf.png');
+    }
+    section:nth-child(8) {
+      background-color: #4284cf;
+    }
+    section:nth-child(9) {
+      background-color: #16b3be;
+    }        
+
+    .loading-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #2f3940;
+      
+      z-index: 9999;
+      font-size: 48px;
+      color: hsla(0, 0%, 95%, 0.945);
+      text-align: center;
+    }
+    .pixan{
+      align-items: center;
+      text-align: center;
+
+      background: right / 0% 100% no-repeat linear-gradient(#c1f5ee, #c1f5ee);
+      transition: background-size 500ms;
+      background-image: url('sd.jpeg');
+    }
+    .pixan:hover{
+      background: left / 100% 100% no-repeat linear-gradient(#c1f5ee, #c1f5ee);
+      
+    }
+    .h1{
+      text-align: center;
+      margin: 0 5px;
+      color: #f32525;
+    }
+
+    .h5{
+      text-align: center;
+      color: #2f3940;
+      /* margin-top: 0%; */
+    }
+    .h6{
+      text-align: center;
+      color: #2275b1;
+      /* margin-top: 0%; */
+    }
+ </style>
+</head>
+<body>
+  <div class="loading-text" >  
+  ______________________
+  <br><br>
+  
+  PIXAN 
+  <br>
+  ______________________  
+
+        
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+        document.querySelector('.loading-text').style.display = 'none';
+      }, 1000);
+    });
+  </script>
+  <section id="sectionHead">
+    <h1 class="h1">PIXAN </h1>
+
+    <h1>EMBEDDED DEVELOPMENT</h1>
+  </section>  
+
+  <h5 class="h5">by Josue Melquisedec Isem Reyes</h1>
+  <h6 class="h6">Guatemala in the world</h6>  
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+</body>
+</html>
